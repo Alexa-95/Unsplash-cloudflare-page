@@ -41,8 +41,8 @@ function App() {
       </div>
       {/* Map through the array of images and render a set of images */}
       {images.map(image =>
-          <a key={image.id} href={image.link} target="_blank">
-            <img src={image.image} />
+          <a key={image.id} href={image.link} target="_blank" rel="noreferrer" >
+            <img src={image.image} alt=""/>
           </a>
       )}
     </div>
