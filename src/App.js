@@ -12,7 +12,10 @@ const getImages = async query => {
     body: JSON.stringify({ query }),
     // Set the `Content-type` header so our API knows that the request
     // is sending JSON
-    headers: { 'Content-type': 'application/json' }
+    headers: {
+      'Content-type': 'application/json',
+      'Access-Control-Allow-Origin': "*"
+    }
   })
   return resp.json()
 }
